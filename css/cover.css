@@ -1,0 +1,67 @@
+.bookcover {
+  height: 750px;
+  width: 500px;
+  position: absolute;
+  background: #de5480;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 36px;
+  position: absolute;
+  color: white;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  animation: wave 2s infinite;
+}
+
+.author {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  text-align: center;
+  animation: wave 2s infinite;
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0); /* Start at the original position */
+      }
+      50% {
+        transform: translateY(-10px); /* Move up 10px */
+      }
+      100% {
+        transform: translateY(0); /* Return to the original position */
+      }
+    
+}
+.human {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 20%;
+  
+}
+
+.head {
+  width: 100px; /* Head size */
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+}
+
+.body {
+  width: 300px; /* Body size, larger than the head */
+  height: 400px;
+  background: black;
+  border-radius: 95% 60% 5% 5%;
+  margin-top: -25px; /* Overlaps the head slightly */
+}
